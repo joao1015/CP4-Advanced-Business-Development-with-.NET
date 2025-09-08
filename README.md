@@ -64,6 +64,34 @@ Acesse o Swagger:
 https://localhost:<porta>/swagger
 
 👨‍🎓 Autor
-Arthur Bispo de Lima -RM 
+Arthur Bispo de Lima -RM Configure sua string de conexão do MongoDB Atlas nos User Secrets do Visual Studio:
+
+{
+  "MongoDB": {
+    "ConnectionString": "mongodb+srv://<usuario>:<senha>@<cluster>/?retryWrites=true&w=majority"
+  }
+}
+
+
+No arquivo appsettings.json, mantenha:
+
+"MongoDB": {
+  "DatabaseName": "BibliotecaDb",
+  "CollectionName": "Livros"
+}
+
+
+Rode o projeto:
+
+dotnet run
+
+
+Acesse o Swagger:
+
+https://localhost:<porta>/swagger
+
+👨‍🎓 Autor
+
+ARTHUR BISPO DE LIMA RM:  557568 
 João Paulo Moreira dos Santos — RM 557808
 
